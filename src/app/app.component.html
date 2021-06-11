@@ -14,6 +14,13 @@
         </tr>
       </thead>
       <tbody>
+
+              
+        <tr>
+          <td>{{name2}}</td>
+          <td> captalizado </td>
+          <td>{{ name2 | maiusculas }}</td>
+        </tr>
          
         <tr>
           <td>{{name}}</td>
@@ -113,3 +120,23 @@
         </div>
       </div>
 
+
+     <h3 class="mt-5">Domseguro</h3>
+     <hr>
+     
+     <div class="row mb-5">
+       <div class="col">
+
+       
+         <iframe 
+            width="560" 
+            height="315" 
+            [src]="videoUrl | domseguro " 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+
+       </div>
+     </div>

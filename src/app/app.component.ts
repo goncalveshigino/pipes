@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
 
-  name      : string   = "Higino";
+  name      : string = "Hulk";
+  name2     : string = 'gonCAlves lUis hIgiNo';
   people    : string[] = ['Ironman', 'Spiderman', 'Thor', 'Loki', 'Groot'];
   PI        : number   = Math.PI;
   percentage: number   = 0.234; //Percent
@@ -16,6 +17,7 @@ export class AppComponent {
   date      : Date = new Date();
   
   languege  : string = 'es';
+  videoUrl  : string = 'https://www.youtube.com/embed/gfmWQijYjmU'
 
   promiseValue = new Promise<string>((resolve) => {
      setTimeout(() => {
