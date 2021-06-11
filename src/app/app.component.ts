@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pipes';
+
+
+  name  : string = "Higino";
+
+  people: string[] = ['Ironman', 'Spiderman', 'Thor', 'Loki', 'Groot'];
+  
+  PI: number = Math.PI;
+  percetagem: number = 0.234;
+
+
 }
