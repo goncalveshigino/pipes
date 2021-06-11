@@ -65,6 +65,30 @@
           <td>{{ salario | currency:'Kz ':'symbol':'.2-2' }}</td>
         </tr>
 
+        <tr>
+          <td>{{ promiseValue }}</td>
+          <td> async  </td>
+          <td>{{ promiseValue | async }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ date }}</td>
+          <td> date:'MMMM-dd'  </td>
+          <td>{{ date | date:'MMMM - dd' }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ date }}</td>
+          <td>
+           date | date:'MMMM - dd':'':'{{ languege }}' 
+           <br>
+            <button (click)="languege='es'" class="mr-1 btn btn-primary">Espanhol</button>
+            <button (click)="languege='en'" class="mr-1 btn btn-secondary">English</button>
+            <button (click)="languege='pt'" class="mr-1 btn btn-success">Portugues</button>
+          </td>
+             <td>{{ date | date: 'MMMM -dd':'':languege }}</td>
+        </tr>
+
       </tbody>
     </table>  
   </div>
