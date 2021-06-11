@@ -13,7 +13,18 @@ export class AppComponent {
   people: string[] = ['Ironman', 'Spiderman', 'Thor', 'Loki', 'Groot'];
   
   PI: number = Math.PI;
-  percetagem: number = 0.234;
+  percentage: number = 0.234; //Percent
+  salario: number = 1234; //CurrencyPipe
+
+  heroe = {
+    name: 'Logan',
+    keycode: 'Wolverine',
+    age: 500,
+    direction: {
+      street: 'primeira',
+      home: 20
+    }
+  }
 
 
 }
