@@ -47,13 +47,45 @@
 
 
         <tr>
-          <td>{{ percetagem }}</td>
-          <td> percent </td>
-          <td>{{ percetagem | percent:'2.2-2' }}</td>
+          <td>{{ percentage }}</td>
+          <td> percent:'2.2-2' </td>
+          <td>{{ percentage | percent:'2.2-2' }}</td>
         </tr>
 
+
+        <tr>
+          <td>{{ salario }}</td>
+          <td> currency </td>
+          <td>{{ salario | currency }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ salario }}</td>
+          <td> currency:'AOA' </td>
+          <td>{{ salario | currency:'Kz ':'symbol':'.2-2' }}</td>
+        </tr>
 
       </tbody>
     </table>  
   </div>
 </div>
+
+  <h3> Slice <small>slice:1:4</small></h3>
+      <hr>
+      <ul class="list-group">
+          <li *ngFor="let person of people | slice:1:4" class="list-group-item">
+            {{ person }}
+          </li>
+      </ul>
+
+      <h3>Json</h3>
+      <div class="row mb-5">
+        <div class="col">
+           
+          <pre>
+             {{ heroe | json  }}
+          </pre>
+
+        </div>
+      </div>
+
