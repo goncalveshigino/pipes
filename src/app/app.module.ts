@@ -11,12 +11,14 @@ registerLocaleData(localeEs);
 import { AppComponent } from './app.component';
 import { MaiusculasPipe } from './pipes/maiusculas.pipe';
 import { DomseguroPipe } from './pipes/domseguro.pipe';
+import { MostrarPipe } from './pipes/mostrar.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MaiusculasPipe,
-    DomseguroPipe
+    DomseguroPipe,
+    MostrarPipe
   ],
   imports: [
     BrowserModule

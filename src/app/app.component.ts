@@ -8,13 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
 
-  name      : string = "Hulk";
-  name2     : string = 'gonCAlves lUis hIgiNo';
+  name      : string   = "Hulk";
+  name2     : string   = 'gonCAlves lUis hIgiNo';
   people    : string[] = ['Ironman', 'Spiderman', 'Thor', 'Loki', 'Groot'];
   PI        : number   = Math.PI;
   percentage: number   = 0.234; //Percent
   salario   : number   = 1234; //CurrencyPipe
-  date      : Date = new Date();
+  date      : Date     = new Date();
+  activar   : boolean  = true;
   
   languege  : string = 'es';
   videoUrl  : string = 'https://www.youtube.com/embed/gfmWQijYjmU'

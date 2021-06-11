@@ -96,6 +96,20 @@
              <td>{{ date | date: 'MMMM -dd':'':languege }}</td>
         </tr>
 
+               <tr>
+          <td>{{ name }}</td>
+          <td> 
+            password:{{activar}}
+            <br>
+            <button (click) ="activar = !activar"
+            class="btn btn-outline-primary">
+                 Activar/Desativar
+            </button>
+          </td>
+          <td>{{ name | mostrar:activar }}</td>
+          
+        </tr>
+
       </tbody>
     </table>  
   </div>
